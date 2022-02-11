@@ -6,7 +6,7 @@ import board
 import adafruit_lis2mdl
 
 i2c = board.I2C()  # uses board.SCL and board.SDA
-lis = adafruit_lis2mdl.LIS2MDL(i2c)
+lis = adafruit_lis2mdl.LIS2MDL_I2C(i2c)
 lis.interrupt_threshold = 80
 lis.interrupt_enabled = True
 

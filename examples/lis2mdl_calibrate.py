@@ -8,7 +8,7 @@ import board
 import adafruit_lis2mdl
 
 i2c = board.I2C()  # uses board.SCL and board.SDA
-magnetometer = adafruit_lis2mdl.LIS2MDL(i2c)
+magnetometer = adafruit_lis2mdl.LIS2MDL_I2C(i2c)
 
 # calibration for magnetometer X (min, max), Y and Z
 hardiron_calibration = [[1000, -1000], [1000, -1000], [1000, -1000]]

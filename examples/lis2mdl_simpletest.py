@@ -8,7 +8,7 @@ import board
 import adafruit_lis2mdl
 
 i2c = board.I2C()  # uses board.SCL and board.SDA
-sensor = adafruit_lis2mdl.LIS2MDL(i2c)
+sensor = adafruit_lis2mdl.LIS2MDL_I2C(i2c)
 
 while True:
     mag_x, mag_y, mag_z = sensor.magnetic
